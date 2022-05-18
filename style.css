@@ -1,0 +1,306 @@
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+	font-size: 14px;
+	margin: auto;
+	padding: 0;
+	background-color: #F0F0F0;
+}
+
+/*-----------------------------------------------------------*/
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	font-family: 'Anek Telugu', sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+	z-index: 10;
+	justify-content: safe flex-end;
+	transition: 0.7s;
+	padding: 10px 0px;
+}
+header ul{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#navbar li{
+	list-style: none;
+}
+
+.navbar-link{
+	text-decoration: none;
+	color: white;
+	transition: 300ms;
+	margin: 0 25px;
+	display: block;
+}
+.navbar-link:hover{
+	text-shadow: #ccc 1px 1px 5px;
+	transform: scale(1.1, 1.1);
+}
+header.abajo{
+	background: #aa6419;
+	padding: 0px 0px;
+	top: -5px;
+
+}
+
+/*---------------------------------------------*/
+
+#welcome-section{
+	width: 100%;
+	height: 70vh;
+	background-color: #FF9625;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23dd7a00' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+	padding-top: 200px;
+	text-align: center;
+	font-family: 'Secular One', sans-serif;
+	color: white;
+}
+
+#main{
+	font-size: 60px;
+}
+
+.description{
+	padding-bottom: 15px;
+	font-size: 25px;
+	margin-top: -50px;
+}
+
+@media screen and (max-width: 725px){
+	#welcome-section{
+		width: 127vh;
+		height: 130vh;
+		padding-top: 400px;
+	}
+
+}
+
+/*-------------------------------------------------*/
+
+#projects h2{
+	margin-top: 0;
+	text-align: center;
+	padding-top: 70px;
+	font-family: 'Secular One', sans-serif;
+	color: white;
+	font-size: 35px;
+}
+#projects hr{
+	width: 190px;
+	height: 2px;
+	background-color: white;
+	position: relative;
+	bottom: 30px;
+	right: 2px;
+}
+#projects{
+	background-color: #FF9625;
+	width: 100%;
+	height: 100vh;
+}
+.projects{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.project-tile img{
+	width: 288px;
+	height: 180px;
+	padding: 50px 0px 150px 0px;
+	margin: 80px 20px 0 16px;
+	border-radius: 50px;
+	background: rgba(170, 100, 25, 0.2) ;
+	box-shadow: 20px 20px 30px #915515, -20px -20px 30px #c4731d;
+
+}
+
+.project-tile:hover{
+	transform: scale(1.02, 1.02);
+}
+
+.project-tile h3{
+	text-align: center;
+	margin-top: -100px;
+	font-family: 'Mitr', sans-serif;
+	color: white;
+	font-size: 20px;
+}
+.project-tile a{
+	text-decoration: none;
+}
+
+@media screen and (max-width: 725px){
+	#projects{
+		width: 127vh;
+		height: 200vh;
+	}
+}
+/*--------------------------------------------------------*/
+
+#contacto{
+	background-color: #FF9625;
+	width: 100%;
+	height: 110vh;
+}
+
+#contacto h2{
+	margin-top: 0;
+	text-align: center;
+	padding-top: 70px;
+	font-family: 'Secular One', sans-serif;
+	color: white;
+	font-size: 35px;
+}
+
+#contacto hr{
+	background-color: whitesmoke;
+	width: 215px;
+	height: 2px;
+	background-color: white;
+	position: relative;
+	bottom: 30px;
+}
+
+form{
+	background:#aa6419;
+	margin: 0px 180px 55px 180px;
+	padding: 0px 85px 50px 80px;
+	border-radius: 8px;
+	height: 410px;
+}
+
+.izquierda{
+	display: inline-block;
+	line-height: 0.5;
+	position: relative;
+	bottom: 25px;
+}
+
+.izquierda h4{
+	font-family: 'Mitr', sans-serif;
+	font-size: 26px;
+	color: white;
+	line-height: 2.9;
+}
+.izquierda h5{
+	font-family: 'Anek Telugu', sans-serif;
+	color: white;
+	font-size: 17px;
+}
+
+.izquierda p{
+	position: relative;
+	bottom: 20px;
+	font-family: 'Anek Telugu', sans-serif;
+	color: #cccccc;
+	font-size: 16px;
+}
+.izquierda img{
+	width: 40px;
+	height: 50px;
+	margin-bottom: -55px;
+	position: relative;
+	bottom: 45px;
+}
+
+.nombre, .direccion, .email, .telefono{
+	position: relative;
+	left: 60px;
+	bottom: 50px;
+}
+.derecha{
+	display: inline-block;
+	position: relative;
+	left: 210px;
+	bottom: 87px;
+}
+.derecha h4{
+	font-family: 'Mitr', sans-serif;
+	font-size: 26px;
+	color: white;
+}
+
+.derecha input, textarea{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 6px;
+	border: solid 1px;
+	border-color: #FF9625;
+	font-family: 'Anek Telugu', sans-serif;
+	padding: 3px 15px 0 15px;
+	outline: none;
+	position: relative;
+	bottom: 18px;
+	opacity: 0.9;
+}
+
+textarea{
+	padding-top: 10px;
+}
+
+#name{
+	height: 35px;
+	width: 200px;
+}
+
+#asunto{
+	height: 35px;
+	width: 300px;
+}
+
+#mensaje{
+	height: 100px;
+	width: 300px;
+}
+
+#submit{
+	height: 40px;
+	width: 220px;
+	border-radius: 8px;
+	background-color: #FF9625;
+	color: white;
+	font-size: 20px;
+}
+#submit:hover{
+	background-color: #b35c00;
+	border-color: #b35c00;
+}
+footer{
+	background-color: #42270a;
+	height: 55px;
+	font-family: 'Mitr', sans-serif;
+	color: white;
+	text-align: center;
+	padding-top: 1px;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+
+}
+.Myname{
+	color: #FF9625;
+	font-size: 18px;
+}
+
+footer img{
+	width: 30px;
+	height: 35px;
+	padding: 10px 10px 10px 20px;
+	transition: 0.7s;
+}
+footer img:hover{
+	transform: scale(1.2, 1.2);
+}

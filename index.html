@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Portfolio Page</title>
+	<script type="text/javascript">
+	window.addEventListener("scroll", function(){
+		var header = document.querySelector("header");
+		header.classList.toggle("abajo",window.scrollY>0);
+	})
+	</script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header id="header">
+		<nav id="navbar">
+			<ul>
+				<li><a href="#welcome-section" class="navbar-link">INICIO</a></li>
+				<li><a href="#projects" class="navbar-link">PROYECTOS</a></li>
+				<li><a href="#contacto" class="navbar-link">CONTACTO</a></li>
+			</ul>
+	    </nav>
+	</header>
+	<section id="welcome-section">	
+		<h1 id="main">Hola, soy Jesús Odreman</h1>
+		<p class="description">y soy estudiante de Responsive Web Design</p>
+	</section>
+	<div>
+		<section id="projects">
+			<h2>Proyectos</h2><hr>
+			<div class="projects">
+				<div class="project-tile">
+					<a href="https://codepen.io/Odremano/pen/PoEvwOa">
+					<img src="img/Tribute Page.jpg" alt="Tribute Page">
+					<h3>Tribute Page</h3>
+					</a>
+				</div>
+				<div class="project-tile">
+					<a href="https://codepen.io/Odremano/pen/VwyKEzL">
+					<img src="img/Survey Form.jpg" alt="Survey Form">
+					<h3>Survey Form</h3>
+					</a>
+				</div>
+				<div class="project-tile">
+					<a href="https://codepen.io/Odremano/pen/ZEBNVYZ">
+					<img src="img/Tecnical.jpg" alt="Technical Documentation">
+					<h3>Technical Documentation</h3>
+					</a>
+				</div>
+				<div class="project-tile">
+					<a href="https://codepen.io/Odremano/pen/yLVWQrR">
+					<img src="img/Product Landing.png" alt="Product Landing Page">
+					<h3>Product Landing Page</h3>
+					</a>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div id="contacto">
+		<h2>Contactame</h2><hr>
+		<form action="">
+			<div class="izquierda">
+				<h4>Ponerse en contacto</h4>
+				<img src="img/name1.png" alt="Person">
+				<div class="nombre">
+					<h5>Nombre</h5>
+					<p>Jesus Odreman</p>
+				</div>					
+				<img src="img/direccion1.png" alt="Direction">
+				<div class="direccion">
+					<h5>Direccion</h5>
+					<p>Buenos Aires - Argentina</p>
+				</div>
+				<img src="img/email1.png" alt="Email">
+				<div class="email">					
+					<h5>Email</h5>
+					<p>Jaosodreman@gmail.com</p>
+				</div>
+				<img src="img/telefono1.png" alt="Telephone">
+				<div class="telefono">					
+					<h5>Teléfono</h5>
+					<p>+54 9 11 73616085</p>
+				</div>
+			</div>
+			<div class="derecha">
+				<h4>Mensaje</h4>
+				<input type="text" placeholder="Nombre" id="name" name="name" required><br>
+				<input type="text" placeholder="Asunto" id="asunto" name="asunto" required><br>
+				<textarea name="comentario" id="comentario" cols="41" rows="5" placeholder="Ingrese su mensaje" required></textarea><br>
+				<input type="submit" value="Enviar mensaje"	id="submit">
+			</div>
+		</form>
+		<footer>
+		<p>Created by <span class="Myname">Jesus Odreman</span> | ® 2022 All rights reserved.</p>
+		<a href="https://www.linkedin.com/in/jesus-odreman-287000209/" target="_blank" id="profile-link"><img src="img/linkedin.png" alt="Linkedin"></a>
+		<a href="https://github.com/odremano" target="_blank"><img src="img/gith.png" alt="GitHub" ></a>
+		<a href="https://www.freecodecamp.org/jesusodreman" target="_blank"><img src="img/Freecodecamp.png" alt="FreeCodeCamp" ></a>
+		</footer>
+	</div>
+</body>
+</html>
