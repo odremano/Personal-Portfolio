@@ -90,6 +90,65 @@ header.abajo{
 
 /*-------------------------------------------------*/
 
+#practicas h2{
+	margin-top: 0;
+	text-align: center;
+	padding-top: 70px;
+	font-family: 'Secular One', sans-serif;
+	color: white;
+	font-size: 35px;
+}
+#practicas hr{
+	width: 190px;
+	height: 2px;
+	background-color: white;
+	position: relative;
+	bottom: 30px;
+	right: 2px;
+}
+#practicas{
+	background-color: #FF9625;
+	width: 100%;
+	height: 100vh;
+}
+.practicas{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.practicas-tile img{
+	width: 288px;
+	height: 180px;
+	padding: 50px 0px 150px 0px;
+	margin: 80px 20px 0 16px;
+	border-radius: 50px;
+	background: rgba(170, 100, 25, 0.2) ;
+	box-shadow: 20px 20px 30px #915515, -20px -20px 30px #c4731d;
+
+}
+
+.practicas-tile:hover{
+	transform: scale(1.02, 1.02);
+}
+
+.practicas-tile h3{
+	text-align: center;
+	margin-top: -100px;
+	font-family: 'Mitr', sans-serif;
+	color: white;
+	font-size: 20px;
+}
+.practicas-tile a{
+	text-decoration: none;
+}
+
+@media screen and (max-width: 725px){
+	#practicas{
+		width: 127vh;
+		height: 200vh;
+	}
+}
+/*--------------------------------------------------------*/
 #projects h2{
 	margin-top: 0;
 	text-align: center;
@@ -116,37 +175,27 @@ header.abajo{
 	flex-wrap: wrap;
 	justify-content: center;
 }
-.project-tile img{
-	width: 288px;
-	height: 180px;
+.projects-tile img{
+	width: 480px;
+	height: 250px;
 	padding: 50px 0px 150px 0px;
-	margin: 80px 20px 0 16px;
+	margin: 10px 20px 0 16px;
 	border-radius: 50px;
 	background: rgba(170, 100, 25, 0.2) ;
 	box-shadow: 20px 20px 30px #915515, -20px -20px 30px #c4731d;
-
 }
-
-.project-tile:hover{
+.projects-tile:hover{
 	transform: scale(1.02, 1.02);
 }
-
-.project-tile h3{
+.projects-tile h3{
 	text-align: center;
 	margin-top: -100px;
 	font-family: 'Mitr', sans-serif;
 	color: white;
-	font-size: 20px;
+	font-size: 24px;
 }
-.project-tile a{
+.projects-tile a{
 	text-decoration: none;
-}
-
-@media screen and (max-width: 725px){
-	#projects{
-		width: 127vh;
-		height: 200vh;
-	}
 }
 /*--------------------------------------------------------*/
 
